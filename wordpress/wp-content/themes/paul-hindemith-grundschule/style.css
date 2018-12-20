@@ -1,0 +1,158 @@
+/*
+Theme Name: Paul Hindemith Grundschule
+Theme URI: http://www.danielsiebrecht.de
+Description: Template für die Paul Hindemith Grundschule
+Author: Daniel Siebrecht
+Author URI: http://www.danielsiebrecht.de
+*/
+
+body {
+	margin: 0;
+	font-family: Helvetica, Arial;
+	font-size: 16px;
+}
+#wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	background: url(images/line-vertical.png) top left repeat-y;
+}
+#wrap1 {
+	background: url(images/line-vertical.png) top right repeat-y;
+}
+#wrap2 {
+	margin: 0 7px;
+	padding: 16px;
+	background: #fff;
+}
+#header {
+	max-width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+#loginout {
+	position: absolute;
+	right: 0; 
+	top: 0;
+}
+#logo {
+	padding: 12px 0;
+}
+#logo a {
+	text-decoration: none;
+	color: #000000;
+}
+#logo img {
+	width: 312px;
+	height: 156px;
+}
+a {
+	color: #458f25;
+	text-decoration: underline;
+}
+a:hover, a:focus {
+	color: #ea9825;
+}
+.navi {
+	width: 250px;
+	float: left;
+	font-size: 18px;
+	padding: 34px 0;
+}
+.navi ul {
+	margin: 0;
+	padding: 0;
+}
+.navi ul li {
+	list-style: none;
+	display: block;
+}
+.navi a {
+	transition: all 0.3s ease-in-out;
+	font-family: "Comic Sans MS";
+	display: block;
+	color: #000;
+	margin: 4px 0;
+	width: 158px;
+	height: 28px;
+	padding: 1px 51px 1px 12px;
+	text-decoration: none;
+	background: url(images/stift-gruen.png) no-repeat;
+}
+.navi .current-menu-item a {
+	margin-left: 10px;
+	background: url(images/stift-gelb.png) no-repeat;
+}
+.navi li a:hover {
+	transition: all 0.5s ease-in-out;
+	margin-left: 10px;
+	background: url(images/stift-gelb.png) no-repeat;
+}
+#content {
+	margin-left: 250px;
+}
+#content #intro {
+	background: url(images/intro-bg.jpg) center center no-repeat;
+	background-size: cover;
+	height: 350px;
+	padding-top: 50px;
+	text-align: center;
+	overflow: hidden;
+}
+#content #intro img {
+	height: 382px;
+	width: 512px;
+}
+#content .block .screenshot {
+	width: 256px;
+	height: 498px;
+}
+#content .block .screenshot.left {
+	float: left;
+	margin-right: 32px;
+}
+#content .block .screenshot.left img, #content .block .screenshot.right img {
+	width: 256px;
+}
+#content .block .screenshot.right {
+	float: right;
+	margin-left: 32px;
+}
+#content .block div {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 16px 0;
+	margin-bottom: 0;
+	overflow: hidden;
+}
+#content .block.red > div, #content .block.yellow > div, #content .block.green > div {
+	height: 385px;
+}
+#content .block div h1 a {
+	text-decoration: none;
+	font-size: 32px;
+	color: #000;
+}
+#footer {
+	padding: 4px 0;
+	color: #000;
+	text-align: center;
+	background: #f1af01;
+}
+#footer div {
+	max-width: 1000px;
+	margin: 0 auto;	
+}
+#footer a {
+	color: #333;
+	text-decoration: none;
+}
+#footer a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+.alignleft {
+	float: left;
+}
+img.alignleft {
+	margin-right: 24px;
+}
