@@ -8,7 +8,7 @@ Author URI: http://www.danielsiebrecht.de
 
 body {
 	margin: 0;
-	font-family: Helvetica, Arial;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 	font-size: calc(16px + .25vw);
     line-height: 150%;	
 }
@@ -20,7 +20,6 @@ body {
 #wrap1 {
 	background: url(images/line-vertical.png) top right repeat-y;
 	display: grid;
-	height: 100vh;
 }
 #wrap2 {
 	margin: 0 7px;
@@ -37,9 +36,6 @@ body {
 	position: absolute;
 	right: 0; 
 	top: 0;
-}
-#logo {
-	padding: 12px 0;
 }
 #logo a {
 	text-decoration: none;
@@ -58,7 +54,7 @@ a:hover, a:focus {
 }
 .navi {
 	float: left;
-	padding: 34px 0;
+	padding: 40px 0;
 	grid-column: 1/2;
 }
 .navi ul {
@@ -72,7 +68,7 @@ a:hover, a:focus {
 .navi a {
 	transition: all 0.3s ease-in-out;
 	font-family: "Comic Sans MS";
-	font-size: calc(15px + .1vw);
+	font-size: calc(15px + .2vw);
 	display: block;
 	color: #000;
 	margin: 4px 0;
@@ -98,6 +94,7 @@ a:hover, a:focus {
 #content {
 	grid-column: 2/12;
 	padding: 0 3vw;
+	word-break: break-word;
 }
 #content #intro {
 	background: url(images/intro-bg.jpg) center center no-repeat;
@@ -141,7 +138,7 @@ a:hover, a:focus {
 	color: #000;
 }
 #footer {
-    padding: 16px 0;
+    padding: 16px 12px;
     text-align: center;
     background: #f1af01;
     grid-column: 1/12;
@@ -164,4 +161,10 @@ a:hover, a:focus {
 }
 img.alignleft {
 	margin-right: 24px;
+}
+h2 {
+	padding-top: 1em;
+}
+h3 {
+	padding-top: .75em;
 }
