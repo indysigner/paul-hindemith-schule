@@ -12,7 +12,7 @@ body {
 	font-size: 16px;
 }
 #wrapper {
-	width: 1000px;
+	width: 95%;
 	margin: 0 auto;
 	background: url(images/line-vertical.png) top left repeat-y;
 }
@@ -25,7 +25,6 @@ body {
 	background: #fff;
 }
 #header {
-	max-width: 1000px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -43,7 +42,7 @@ body {
 }
 #logo img {
 	width: 312px;
-	height: 156px;
+	max-width: 90%;
 }
 a {
 	color: #458f25;
