@@ -108,6 +108,10 @@ a:hover, a:focus {
 	height: 382px;
 	width: 512px;
 }
+#content img {
+	border-radius: 4px;
+	padding: 4px;
+}
 #content .block .screenshot {
 	width: 256px;
 	height: 498px;
