@@ -73,10 +73,11 @@ a:hover, a:focus {
 .navi a {
 	transition: all 0.3s ease-in-out;
 	font-family: "Comic Sans MS";
+	font-size: calc(16px + .1vw)
 	display: block;
 	color: #000;
 	margin: 4px 0;
-	width: 158px;
+	width: calc(100px + 1vw);
 	height: 28px;
 	padding: 1px 51px 1px 12px;
 	text-decoration: none;
@@ -92,7 +93,7 @@ a:hover, a:focus {
 	background: url(images/stift-gelb.png) no-repeat;
 }
 #content {
-	grid-column: 3/12;
+	grid-column: 2/12;
 }
 #content #intro {
 	background: url(images/intro-bg.jpg) center center no-repeat;
