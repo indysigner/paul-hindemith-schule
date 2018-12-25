@@ -112,6 +112,9 @@ a:hover, a:focus {
 	border-radius: 4px;
 	padding: 4px;
 }
+#content .block {
+	padding-bottom: 2em;
+}
 #content .block .screenshot {
 	width: 256px;
 	height: 498px;
@@ -146,14 +149,13 @@ a:hover, a:focus {
     text-align: center;
     background: #f1af01;
     grid-column: 1/12;
-    border-radius: 16px;
-    margin-top: 4vh;
+    margin: 0em -2em -2em;
 }
 #footer div {
 	margin: 0 auto;	
 }
 #footer a {
-	color: #333;
+	color: #000;
 	text-decoration: none;
 }
 #footer a:hover {
@@ -171,4 +173,7 @@ h2 {
 }
 h3 {
 	padding-top: .75em;
+}
+#content li {
+	padding-bottom: 1vh;
 }
