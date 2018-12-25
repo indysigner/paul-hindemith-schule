@@ -77,19 +77,19 @@ a:hover, a:focus {
 	padding: 1px 51px 1px 12px;
 	text-decoration: none;
 	background: url(images/stift-gruen.png) no-repeat;
-	background-size: calc(170px + 5vw);
+	background-size: calc(170px + 4vw);
 
 }
 .navi .current-menu-item a {
-	margin-left: 10px;
+	margin-left: 15px;
 	background: url(images/stift-gelb.png) no-repeat;
-	background-size: calc(170px + 5vw);
+	background-size: calc(170px + 4vw);
 }
 .navi li a:hover {
 	transition: all 0.5s ease-in-out;
-	margin-left: 10px;
+	margin-left: 15px;
 	background: url(images/stift-gelb.png) no-repeat;
-	background-size: calc(170px + 5vw);
+	background-size: calc(170px + 4vw);
 }
 #content {
 	grid-column: 2/12;
