@@ -30,6 +30,7 @@ body {
 #header {
 	position: relative;
 	grid-column: 1/12;
+	max-height: calc(20vh - (2 x 2vh));
 }
 #loginout {
 	position: absolute;
