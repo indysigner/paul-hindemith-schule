@@ -9,7 +9,7 @@ Author URI: http://www.danielsiebrecht.de
 body {
 	margin: 0;
 	font-family: Helvetica, Arial;
-	font-size: 16px;
+	font-size: 16px;	
 }
 #wrapper {
 	width: 95%;
@@ -18,15 +18,17 @@ body {
 }
 #wrap1 {
 	background: url(images/line-vertical.png) top right repeat-y;
+	display: grid;
 }
 #wrap2 {
 	margin: 0 7px;
 	padding: 16px;
 	background: #fff;
+	display: grid;
 }
 #header {
-	margin: 0 auto;
 	position: relative;
+	grid-column: 1/12;
 }
 #loginout {
 	position: absolute;
@@ -56,6 +58,7 @@ a:hover, a:focus {
 	float: left;
 	font-size: 18px;
 	padding: 34px 0;
+	grid-column: 1/2;
 }
 .navi ul {
 	margin: 0;
@@ -87,7 +90,7 @@ a:hover, a:focus {
 	background: url(images/stift-gelb.png) no-repeat;
 }
 #content {
-	margin-left: 250px;
+	grid-column: 3/12;
 }
 #content #intro {
 	background: url(images/intro-bg.jpg) center center no-repeat;
@@ -118,7 +121,6 @@ a:hover, a:focus {
 }
 #content .block div {
 	max-width: 1000px;
-	margin: 0 auto;
 	padding: 16px 0;
 	margin-bottom: 0;
 	overflow: hidden;
@@ -136,6 +138,7 @@ a:hover, a:focus {
 	color: #000;
 	text-align: center;
 	background: #f1af01;
+	grid-column: 1/12;
 }
 #footer div {
 	max-width: 1000px;
