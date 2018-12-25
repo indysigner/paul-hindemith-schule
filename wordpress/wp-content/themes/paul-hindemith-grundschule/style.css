@@ -13,7 +13,7 @@ body {
     line-height: 150%;	
 }
 #wrapper {
-	width: 95%;
+	width: 100%;
 	margin: 0 auto;
 	background: url(images/line-vertical.png) top left repeat-y;
 }
@@ -56,9 +56,7 @@ a:hover, a:focus {
 	color: #ea9825;
 }
 .navi {
-	width: 250px;
 	float: left;
-	font-size: 18px;
 	padding: 34px 0;
 	grid-column: 1/2;
 }
@@ -73,27 +71,32 @@ a:hover, a:focus {
 .navi a {
 	transition: all 0.3s ease-in-out;
 	font-family: "Comic Sans MS";
-	font-size: calc(16px + .1vw)
+	font-size: calc(15px + .1vw);
 	display: block;
 	color: #000;
 	margin: 4px 0;
-	width: calc(100px + 1vw);
-	height: 28px;
+	width: calc(100px + 5vw);
+	height: calc(28px + .5vw);
 	padding: 1px 51px 1px 12px;
 	text-decoration: none;
 	background: url(images/stift-gruen.png) no-repeat;
+	background-size: calc(165px + 5vw);
+
 }
 .navi .current-menu-item a {
 	margin-left: 10px;
 	background: url(images/stift-gelb.png) no-repeat;
+	background-size: calc(165px + 5vw);
 }
 .navi li a:hover {
 	transition: all 0.5s ease-in-out;
 	margin-left: 10px;
 	background: url(images/stift-gelb.png) no-repeat;
+	background-size: calc(165px + 5vw);
 }
 #content {
 	grid-column: 2/12;
+	padding: 0 3vw;
 }
 #content #intro {
 	background: url(images/intro-bg.jpg) center center no-repeat;
@@ -137,14 +140,14 @@ a:hover, a:focus {
 	color: #000;
 }
 #footer {
-	padding: 4px 0;
-	color: #000;
-	text-align: center;
-	background: #f1af01;
-	grid-column: 1/12;
+    padding: 16px 0;
+    text-align: center;
+    background: #f1af01;
+    grid-column: 1/12;
+    border-radius: 16px;
+    margin-top: 4vh;
 }
 #footer div {
-	max-width: 1000px;
 	margin: 0 auto;	
 }
 #footer a {
