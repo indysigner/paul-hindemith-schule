@@ -15,10 +15,10 @@ body {
 #wrapper {
 	width: 100%;
 	margin: 0 auto;
-	background: url(images/line-vertical.png) top left repeat-y;
+//	background: url(images/line-vertical.png) top left repeat-y;
 }
 #wrap1 {
-	background: url(images/line-vertical.png) top right repeat-y;
+//	background: url(images/line-vertical.png) top right repeat-y;
 	display: grid;
 }
 #wrap2 {
@@ -94,7 +94,6 @@ a:hover, a:focus {
 #content {
 	grid-column: 2/12;
 	padding: 0 3vw;
-	word-break: break-word;
 }
 #content #intro {
 	background: url(images/intro-bg.jpg) center center no-repeat;
@@ -132,7 +131,7 @@ a:hover, a:focus {
 }
 #content .block div {
 	max-width: 1000px;
-	padding: 16px 0;
+	padding: 4px 0;
 	margin-bottom: 0;
 	overflow: hidden;
 }
@@ -168,12 +167,64 @@ a:hover, a:focus {
 img.alignleft {
 	margin-right: 24px;
 }
-h2 {
+h1 {line-height: 120%;}
+h2, h3 {
 	padding-top: 1em;
-}
-h3 {
-	padding-top: .75em;
+	line-height: 120%;
 }
 #content li {
 	padding-bottom: 1vh;
+}
+
+@media screen and (max-width: 800px) {
+	.navi {width: 100%;}
+	
+	.navi ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 .5em;
+    margin: 0;
+	text-align: center;}
+		
+	#content {
+		grid-column: 1/12;
+		max-width: 88vw;}}
+
+	#wrap2 {
+	margin: 0;
+	padding: 1vw;}
+	
+	.navi a {
+	    margin: 4px 12px;
+}	
+	
+@media screen and (max-width: 400px) {
+	.navi {width: 100%;}
+	
+	.navi ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 .5em;
+    margin: 0;
+	text-align: left;}
+		
+	#content {
+		grid-column: 1/12;
+		max-width: 93vw;
+		word-wrap: break-word;}
+	
+	#wrap2 {
+	margin: 0;
+	padding: 1vw;}
+	
+	.navi a {
+	    margin: 4px 12px;
+		width: calc(200px + 5vw);
+		background-size: calc(200px + 5vw);}
+	
+	.navi .current-menu-item a {
+		background-size: calc(210px + 5vw);}
+	
+	.navi li a:hover {
+		background-size: calc(210px + 5vw);}
 }
