@@ -20,6 +20,7 @@ body {
 #wrap1 {
 	background: url(images/line-vertical.png) top right repeat-y;
 	display: grid;
+	height: 100vh;
 }
 #wrap2 {
 	margin: 0 7px;
