@@ -22,8 +22,8 @@ body {
 	display: grid;
 }
 #wrap2 {
-	margin: 0 7px;
-	padding: 16px;
+	margin: 0;
+	padding: 0;
 	background: #fff;
 	display: grid;
 }
@@ -34,8 +34,8 @@ body {
 }
 #loginout {
 	position: absolute;
-	right: 0; 
-	top: 0;
+	right: 1vw;
+    top: 1vh;
 }
 #logo a {
 	text-decoration: none;
@@ -67,29 +67,29 @@ a:hover, a:focus {
 }
 .navi a {
 	transition: all 0.3s ease-in-out;
-	font-family: "Comic Sans MS";
+	font-family: "Comic Sans MS", sans-serif;
 	font-size: calc(15px + .2vw);
 	display: block;
 	color: #000;
 	margin: 4px calc(4px + 1vw);
-	width: calc(100px + 5vw);
+	width: calc(120px + 5vw);
 	height: calc(28px + .5vw);
 	padding: 1px 51px 1px 12px;
 	text-decoration: none;
 	background: url(images/stift-gruen.png) no-repeat;
-	background-size: calc(165px + 5vw);
+	background-size: calc(170px + 5vw);
 
 }
 .navi .current-menu-item a {
 	margin-left: 10px;
 	background: url(images/stift-gelb.png) no-repeat;
-	background-size: calc(165px + 5vw);
+	background-size: calc(170px + 5vw);
 }
 .navi li a:hover {
 	transition: all 0.5s ease-in-out;
 	margin-left: 10px;
 	background: url(images/stift-gelb.png) no-repeat;
-	background-size: calc(165px + 5vw);
+	background-size: calc(170px + 5vw);
 }
 #content {
 	grid-column: 2/12;
