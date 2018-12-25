@@ -43,7 +43,7 @@ body {
 }
 #logo img {
 	width: 312px;
-	max-width: 90%;
+	max-width: 95vw;
 }
 a {
 	color: #458f25;
@@ -71,7 +71,7 @@ a:hover, a:focus {
 	font-size: calc(15px + .2vw);
 	display: block;
 	color: #000;
-	margin: 4px 0;
+	margin: 4px calc(4px + 1vw);
 	width: calc(100px + 5vw);
 	height: calc(28px + .5vw);
 	padding: 1px 51px 1px 12px;
@@ -93,7 +93,9 @@ a:hover, a:focus {
 }
 #content {
 	grid-column: 2/12;
-	padding: 0 3vw;
+	padding: 0 calc(1em + 1vw);
+	max-width: 66vw;
+	word-break: break-word;
 }
 #content #intro {
 	background: url(images/intro-bg.jpg) center center no-repeat;
@@ -148,7 +150,7 @@ a:hover, a:focus {
     text-align: center;
     background: #f1af01;
     grid-column: 1/12;
-    margin: 0em -2em -2em;
+    margin: -0.5em;
 }
 #footer div {
 	margin: 0 auto;	
@@ -172,6 +174,7 @@ h2, h3 {
 	padding-top: 1em;
 	line-height: 120%;
 }
+p {padding: .5vh 0;}
 #content li {
 	padding-bottom: 1vh;
 }
@@ -181,22 +184,25 @@ h2, h3 {
 	
 	.navi ul {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 0 .5em;
     margin: 0;
 	text-align: center;}
 		
 	#content {
 		grid-column: 1/12;
-		max-width: 88vw;}}
+		max-width: 88vw;}
 
 	#wrap2 {
 	margin: 0;
 	padding: 1vw;}
-	
-	.navi a {
-	    margin: 4px 12px;
-}	
+}
+
+@media screen and (max-width: 600px) {
+	.navi ul {
+		grid-template-columns: 1fr 1fr;
+	}
+}
 	
 @media screen and (max-width: 400px) {
 	.navi {width: 100%;}
@@ -207,7 +213,7 @@ h2, h3 {
     padding: 0 .5em;
     margin: 0;
 	text-align: left;}
-		
+		    
 	#content {
 		grid-column: 1/12;
 		max-width: 93vw;
