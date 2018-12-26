@@ -30,15 +30,16 @@ body {
 #header {
 	position: relative;
 	grid-column: 1/12;
-	max-height: calc(20vh - (2 x 2vh));
+	border-top: 4px solid #6ec33e;
 }
 #loginout {
 	position: absolute;
 	right: 1vw;
     top: 1vh;
+	font-size: .8em;
 }
 #logo {
-	padding-left: 1.5vw 0 0 1.5vw;
+	padding: 1.5vw 0 0 1.5vw;
 }
 #logo a {
 	text-decoration: none;
@@ -217,10 +218,6 @@ p {padding: .5vh 0;}
 		grid-column: 1/12;
 		max-width: 93vw;
 		word-wrap: break-word;}
-	
-	#wrap2 {
-	margin: 0;
-	padding: 1vw;}
 	
 	.navi a {
 	    margin: 4px 12px;
