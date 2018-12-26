@@ -26,11 +26,12 @@ body {
 	background: #fff;
 	display: grid;
 	box-shadow: 0 0 0.625em 0.08em rgba(0,0,0,.05);
+	max-width: 60em;
 }
 #header {
 	position: relative;
 	grid-column: 1/12;
-	border-top: 4px solid #6ec33e;
+	border-top: 6px solid #6ec33e;
 }
 #loginout {
 	position: absolute;
@@ -58,7 +59,7 @@ a:hover, a:focus {
 }
 .navi {
 	float: left;
-	padding: 40px 0 0 1vw;
+	padding: 40px 0 0 2vw;
 	grid-column: 1/2;
 }
 .navi ul {
@@ -72,28 +73,26 @@ a:hover, a:focus {
 .navi a {
 	transition: all 0.3s ease-in-out;
 	font-family: "Comic Sans MS", sans-serif;
-	font-size: calc(15px + .2vw);
+	font-size: 18px;
 	display: block;
 	color: #000;
-	margin: 4px calc(4px + 1vw);
 	width: calc(120px + 5vw);
-	height: calc(28px + .5vw);
-	padding: 1px 51px 1px 12px;
+	height: calc(30px + .5vw);
+	padding: 0 51px 4px 12px;
 	text-decoration: none;
 	background: url(images/stift-gruen.png) no-repeat;
-	background-size: calc(170px + 4vw);
-
+	background-image: -webkit-image-set(url(/wp-content/themes/paul-hindemith-grundschule/images/stift-gruen.png) 1x, url(/wp-content/themes/paul-hindemith-grundschule/images/stift-gruen@2x.png) 2x);
 }
 .navi .current-menu-item a {
-	margin-left: 15px;
+	margin-left: 10px;
 	background: url(images/stift-gelb.png) no-repeat;
-	background-size: calc(170px + 4vw);
+	background-image: -webkit-image-set(url(/wp-content/themes/paul-hindemith-grundschule/images/stift-gelb.png) 1x, url(/wp-content/themes/paul-hindemith-grundschule/images/stift-gelb@2x.png) 2x);
 }
 .navi li a:hover {
 	transition: all 0.5s ease-in-out;
-	margin-left: 15px;
+	margin-left: 10px;
 	background: url(images/stift-gelb.png) no-repeat;
-	background-size: calc(170px + 4vw);
+	background-image: -webkit-image-set(url(/wp-content/themes/paul-hindemith-grundschule/images/stift-gelb.png) 1x, url(/wp-content/themes/paul-hindemith-grundschule/images/stift-gelb@2x.png) 2x);
 }
 #content {
 	grid-column: 2/12;
@@ -191,38 +190,39 @@ p {padding: .5vh 0;}
 	.navi ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 .5em;
-    margin: 0;
-	text-align: center;}
+    padding: 0;
+    margin: 0;}
 		
 	#content {
 		grid-column: 1/12;
-		max-width: 88vw;}
+		max-width: 88vw;
+		padding: 2em 1em;}
 }
 
 @media screen and (max-width: 600px) {
 	.navi ul {
 		grid-template-columns: 1fr 1fr;
 	}
-}
-	
-@media screen and (max-width: 400px) {
-	.navi {width: 100%;}
-	
-	.navi ul {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0 .5em;
-    margin: 0;
-	text-align: left;}
-		    
-	#content {
-		grid-column: 1/12;
-		max-width: 93vw;
-		word-wrap: break-word;}
 	
 	.navi a {
 	    margin: 4px 12px;
+		width: 150px;
+}
+	
+@media screen and (max-width: 400px) {
+	.navi {
+		width: 100%;}
+	
+	.navi ul {
+    	display: grid;
+    	grid-template-columns: 1fr;
+    	padding: 0 .5em;
+    	margin: 0;
+		text-align: left;}
+	
+	.navi a {
+	    margin: 4px 12px;
+		padding: 1px 10px 0;
 		width: calc(200px + 5vw);
 		background-size: calc(200px + 5vw);}
 	
@@ -231,4 +231,10 @@ p {padding: .5vh 0;}
 	
 	.navi li a:hover {
 		background-size: calc(210px + 5vw);}
+	
+	#content {
+		grid-column: 1/12;
+		max-width: 93vw;
+		word-wrap: break-word;
+		padding: 1.5em;}
 }
