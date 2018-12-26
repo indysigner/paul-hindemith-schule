@@ -150,11 +150,13 @@ a:hover, a:focus {
 	color: #000;
 }
 #footer {
-    padding: 16px 12px;
+    padding: 1.5em;
     text-align: center;
     background: #f1af01;
     grid-column: 1/12;
     margin: 0;
+	border-top: 6px solid #fcb900;
+    font-size: calc(.9em + .1vw);
 }
 #footer div {
 	margin: 0 auto;	
