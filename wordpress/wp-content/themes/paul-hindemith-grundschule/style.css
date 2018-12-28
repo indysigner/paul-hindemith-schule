@@ -27,7 +27,6 @@ body {
 	display: grid;
 	box-shadow: 0 0 0.625em 0.08em rgba(0,0,0,.05);
 	max-width: 60em;
-	min-height: 100vh;
 }
 #header {
 	position: relative;
@@ -100,6 +99,7 @@ a:hover, a:focus {
 	padding: 0 calc(1em + 1vw);
 	max-width: 66vw;
 	word-break: break-word;
+	min-height: 100vh;
 }
 #content #intro {
 	background: url(images/intro-bg.jpg) center center no-repeat;
