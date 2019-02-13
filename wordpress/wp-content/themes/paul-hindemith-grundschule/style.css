@@ -27,7 +27,6 @@ body {
 	display: grid;
 	box-shadow: 0 0 0.625em 0.08em rgba(0,0,0,.05);
 	max-width: 60em;
-	min-height: 100vh;
 }
 #header {
 	position: relative;
@@ -74,7 +73,7 @@ a:hover, a:focus {
 .navi a {
 	transition: all 0.3s ease-in-out;
 	font-family: "Comic Sans MS", sans-serif;
-	font-size: 18px;
+	font-size: calc(16px + .05vw);
 	display: block;
 	color: #000;
 	width: calc(120px + 5vw);
@@ -100,6 +99,7 @@ a:hover, a:focus {
 	padding: 0 calc(1em + 1vw);
 	max-width: 66vw;
 	word-break: break-word;
+	min-height: 100vh;
 }
 #content #intro {
 	background: url(images/intro-bg.jpg) center center no-repeat;
@@ -183,6 +183,19 @@ h2, h3 {
 p {padding: .5vh 0;}
 #content li {
 	padding-bottom: 1vh;
+}
+
+.ulnone ul {
+	list-style: none;
+	display: flex;
+    flex-wrap: wrap;
+    padding: 0 1em;
+	margin: 0 auto;
+}
+
+.ulnone li {
+	padding: 0 1em;
+	max-width: 8em;
 }
 
 @media screen and (max-width: 800px) {
