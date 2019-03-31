@@ -57,6 +57,10 @@ a {
 a:hover, a:focus {
 	color: #ea9825;
 }
+hr {
+	border: 4px solid #eee;
+	margin: 2em 0;
+}
 .navi {
 	float: left;
 	padding: 40px 0 0 2vw;
@@ -90,7 +94,6 @@ a:hover, a:focus {
 }
 .navi li a:hover {
 	transition: all 0.5s ease-in-out;
-	margin-left: 10px;
 	background: url(images/stift-gelb.png) no-repeat;
 	background-image: -webkit-image-set(url(/wp-content/themes/paul-hindemith-grundschule/images/stift-gelb.png) 1x, url(/wp-content/themes/paul-hindemith-grundschule/images/stift-gelb@2x.png) 2x);
 }
